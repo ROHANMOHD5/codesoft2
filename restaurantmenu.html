@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #2f3c90;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    .menu-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      font-size: 28px;
+      border-bottom: 3px solid #2f3c90;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-weight: 600;
+    }
+
+    .item-price {
+      color: #2f3c90;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .item-price {
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Urban Bites Menu</h1>
+    <p>Delicious. Fresh. Affordable.</p>
+  </header>
+
+  <div class="menu-section">
+
+    <!-- Starters -->
+    <div class="category">
+      <h2>🥗 Starters</h2>
+      <div class="item">
+        <span class="item-name">Tomato Basil Soup</span>
+        <span class="item-price">₹120</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Veg Spring Rolls</span>
+        <span class="item-price">₹150</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Garlic Bread with Cheese</span>
+        <span class="item-price">₹110</span>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="category">
+      <h2>🍝 Main Course</h2>
+      <div class="item">
+        <span class="item-name">Paneer Butter Masala</span>
+        <span class="item-price">₹250</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Chicken Biryani</span>
+        <span class="item-price">₹280</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Veg Pasta Alfredo</span>
+        <span class="item-price">₹230</span>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <div class="category">
+      <h2>🍹 Beverages</h2>
+      <div class="item">
+        <span class="item-name">Fresh Lime Soda</span>
+        <span class="item-price">₹60</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Cold Coffee</span>
+        <span class="item-price">₹90</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Mango Smoothie</span>
+        <span class="item-price">₹120</span>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="category">
+      <h2>🍨 Desserts</h2>
+      <div class="item">
+        <span class="item-name">Chocolate Brownie</span>
+        <span class="item-price">₹140</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Gulab Jamun (2 pcs)</span>
+        <span class="item-price">₹90</span>
+      </div>
+      <div class="item">
+        <span class="item-name">Ice Cream Sundae</span>
+        <span class="item-price">₹110</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Urban Bites. All rights reserved.
+  </footer>
+
+</body>
+</html>
